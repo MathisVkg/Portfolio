@@ -11,6 +11,9 @@ nav {
     flex-direction: column;
     margin-top: 12%;
     margin-left: 20%;
+
+    animation: fadeInLeft;
+    animation-duration: 1.5s;
     .textNav {
         margin: 0;
         text-decoration: none;
