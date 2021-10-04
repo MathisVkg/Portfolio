@@ -1,0 +1,132 @@
+
+//NavBar
+
+.fa-bars {
+    margin: 15px 0 0 95%;
+    font-size: 1.2em;
+    position: fixed;
+    top: 0;
+    transition: 0.4s ease-in-out;
+    z-index: 1;
+    padding: 10px;
+    color: white;
+    &:hover {
+      color: #303030;
+      background-color: white;
+      border-radius: 50px;
+      transform: rotate(90deg);
+    }
+  }
+  .fa-times {
+    position: absolute;
+    top: 0;
+    margin: 20px 0 0 90%;
+    font-size: 1.2em;
+    color: white;
+    transition: 0.4s ease-in-out;
+    padding: 10px;
+    width: 14px;
+    &:hover {
+      color: #303030;
+      background-color: white;
+      border-radius: 50px;
+      transform: rotate(90deg);
+    }
+  }
+  
+  header {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    transition: 0.5s ease-in-out;
+    .navText {
+      text-decoration: none;
+      color: white;
+    }
+  }
+  
+  
+  
+  .black:hover {
+      width: 65%;
+  }
+  
+  .red:hover {
+      width: 65%;
+  }
+  
+  .black {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 50%;
+      background-color: #303030;
+      transition: 0.7s ease-in-out;
+      .iconLink {
+          display: flex;
+          align-items: center;
+      }
+      .navText {
+          font-weight: 700;
+          margin-left: 130px;
+          font-size: 35px;
+      }
+      .iconText {
+          text-decoration: none;
+          color: white;
+          margin-left: 10px;
+          transition: 0.3s ease-in-out;
+          &:hover {
+              transform: translateX(8px);
+              color: #f54d4d;
+      }
+  }
+  
+  }
+  .red {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 50%;
+      background-color: #f54d4d;
+      transition: 0.7s ease-in-out;
+      .me {
+          position: absolute;
+          top: 0;
+          margin-left: 50px;
+          color: white;
+          font-size: 25px;
+          font-weight: 400;
+          font-style: italic;
+      }
+      .navText {
+          font-weight: 900;
+          margin-left: 130px;
+          margin-top: 5px;
+          font-size: 50px;
+          transition: 0.3s ease-in-out;
+          &:hover {
+              transform: translateX(8px);
+              color: #303030;
+          }
+      }
+  }
+  
+  .navOn {
+    transform: translateY(0);
+  }
+  .navOff {
+    transform: translateY(-150%);
+  }
+  .navOn2 {
+    transform: translateY(0);
+  }
+  .navOff2 {
+    transform: translateY(150%);
+  }
+
+
