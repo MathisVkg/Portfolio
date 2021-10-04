@@ -1,20 +1,36 @@
 body {
   margin: 0;
   font-family: 'Lato', sans-serif;
+  background-color: black;
+}
+
+.bodyClose {
+  height: 100%;
+  overflow: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  z-index: 1;
 }
 
 .fa-bars {
-  margin: 15px 0 0 1855px;
+  margin: 15px 0 0 95%;
   font-size: 1.2em;
   position: fixed;
+  top: 0;
   transition: 0.4s ease-in-out;
   z-index: 1;
   padding: 10px;
+  color: white;
 }
 
 .fa-bars:hover {
-  color: white;
-  background-color: #303030;
+  color: #303030;
+  background-color: white;
   border-radius: 50px;
   transform: rotate(90deg);
 }
@@ -22,7 +38,7 @@ body {
 .fa-times {
   position: absolute;
   top: 0;
-  margin: 20px 0 0 900px;
+  margin: 20px 0 0 90%;
   font-size: 1.2em;
   color: white;
   transition: 0.4s ease-in-out;
@@ -41,8 +57,10 @@ header {
   display: flex;
   justify-content: center;
   position: fixed;
+  top: 0;
   height: 100vh;
   width: 100%;
+  z-index: -1;
   transition: 0.5s ease-in-out;
 }
 
@@ -120,7 +138,7 @@ header .navText {
 }
 
 .navOff {
-  transform: translateY(-100%);
+  transform: translateY(-150%);
 }
 
 .navOn2 {
@@ -128,6 +146,105 @@ header .navText {
 }
 
 .navOff2 {
-  transform: translateY(100%);
+  transform: translateY(150%);
+}
+
+.title {
+  margin-top: 215px;
+  margin-left: 190px;
+  font-size: 5vw;
+  font-weight: 900;
+  width: 65vw;
+  color: white;
+  margin-bottom: 0;
+  animation: fadeInLeft;
+  animation-duration: 1.5s;
+}
+
+.subTitle {
+  margin-left: 190px;
+  font-size: 1vw;
+  font-weight: 700;
+  color: white;
+  margin-top: 5px;
+  font-style: italic;
+  animation: fadeInLeft;
+  animation-duration: 1.5s;
+}
+
+.fa-chevron-down {
+  color: white;
+  font-size: 1.3vw;
+  margin-top: 15%;
+  margin-left: 50%;
+}
+
+#arrow1 {
+  animation: fadeIn 3s infinite;
+  opacity: 0.5;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#arrow2 {
+  animation: fadeIn 3s infinite;
+  animation-delay: 0.3s;
+  opacity: 0.5;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#arrow3 {
+  animation: fadeIn 3s infinite;
+  animation-delay: 0.6s;
+  opacity: 0.5;
+  transition: opacity 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.container {
+  color: white;
+  margin-top: 200px;
+  width: 30vw;
+  height: 40vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container .contText {
+  font-size: 20px;
+  margin-bottom: 7%;
+}
+
+.container .pdf {
+  text-decoration: none;
+  color: #f54d4d;
+  border-radius: 4px;
+  transition: 0.4s ease-in-out;
+}
+
+.container .pdf:hover {
+  font-size: 18px;
+}
+
+.container .pdf:after {
+  content: '';
+  display: block;
+  margin-top: 2px;
+  height: 2px;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+
+.container .pdf:hover:after {
+  width: 16%;
+  background: white;
 }
 /*# sourceMappingURL=about.css.map */
