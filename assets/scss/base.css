@@ -3,6 +3,7 @@
   font-size: 1.2em;
   position: fixed;
   top: 0;
+  -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
   z-index: 1;
   padding: 10px;
@@ -13,7 +14,8 @@
   color: #303030;
   background-color: white;
   border-radius: 50px;
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .fa-times {
@@ -22,6 +24,7 @@
   margin: 20px 0 0 90%;
   font-size: 1.2em;
   color: white;
+  -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
   padding: 10px;
   width: 14px;
@@ -31,17 +34,23 @@
   color: #303030;
   background-color: white;
   border-radius: 50px;
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: fixed;
   top: 0;
   height: 100vh;
   width: 100%;
   z-index: -1;
+  -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
 
@@ -59,17 +68,29 @@ header .navText {
 }
 
 .black {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 50%;
   background-color: #303030;
+  -webkit-transition: 0.7s ease-in-out;
   transition: 0.7s ease-in-out;
 }
 
 .black .iconLink {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .black .navText {
@@ -82,20 +103,30 @@ header .navText {
   text-decoration: none;
   color: white;
   margin-left: 10px;
+  -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
 
 .black .iconText:hover {
-  transform: translateX(8px);
+  -webkit-transform: translateX(8px);
+          transform: translateX(8px);
   color: #f54d4d;
 }
 
 .red {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 50%;
   background-color: #f54d4d;
+  -webkit-transition: 0.7s ease-in-out;
   transition: 0.7s ease-in-out;
 }
 
@@ -114,27 +145,127 @@ header .navText {
   margin-left: 130px;
   margin-top: 5px;
   font-size: 50px;
+  -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
 
 .red .navText:hover {
-  transform: translateX(8px);
+  -webkit-transform: translateX(8px);
+          transform: translateX(8px);
   color: #303030;
 }
 
 .navOn {
-  transform: translateY(0);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .navOff {
-  transform: translateY(-150%);
+  -webkit-transform: translateY(-150%);
+          transform: translateY(-150%);
 }
 
 .navOn2 {
-  transform: translateY(0);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .navOff2 {
-  transform: translateY(150%);
+  -webkit-transform: translateY(150%);
+          transform: translateY(150%);
+}
+
+/*! locomotive-scroll v4.1.1 | MIT License | https://github.com/locomotivemtl/locomotive-scroll */
+html.has-scroll-smooth {
+  overflow: hidden;
+}
+
+html.has-scroll-dragging {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.has-scroll-smooth body {
+  overflow: hidden;
+}
+
+.has-scroll-smooth [data-scroll-container] {
+  min-height: 100vh;
+}
+
+[data-scroll-direction="horizontal"] [data-scroll-container] {
+  height: 100vh;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+[data-scroll-direction="horizontal"] [data-scroll-section] {
+  display: inline-block;
+  vertical-align: top;
+  white-space: nowrap;
+  height: 100%;
+}
+
+.c-scrollbar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 11px;
+  height: 100%;
+  -webkit-transform-origin: center right;
+          transform-origin: center right;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+  opacity: 0;
+}
+
+.c-scrollbar:hover {
+  -webkit-transform: scaleX(1.45);
+          transform: scaleX(1.45);
+}
+
+.c-scrollbar:hover, .has-scroll-scrolling .c-scrollbar, .has-scroll-dragging .c-scrollbar {
+  opacity: 1;
+}
+
+[data-scroll-direction="horizontal"] .c-scrollbar {
+  width: 100%;
+  height: 10px;
+  top: auto;
+  bottom: 0;
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+[data-scroll-direction="horizontal"] .c-scrollbar:hover {
+  -webkit-transform: scaleY(1.3);
+          transform: scaleY(1.3);
+}
+
+.c-scrollbar_thumb {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: black;
+  opacity: 0.5;
+  width: 7px;
+  border-radius: 10px;
+  margin: 2px;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.has-scroll-dragging .c-scrollbar_thumb {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+[data-scroll-direction="horizontal"] .c-scrollbar_thumb {
+  right: auto;
+  bottom: 0;
 }
 /*# sourceMappingURL=base.css.map */

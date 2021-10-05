@@ -2,6 +2,136 @@
 body {
     margin: 0;
     font-family: 'Lato', sans-serif;
-    background-color: black;
+    background-color: white;
 }
 
+
+.intro {
+    padding-top: 1px;
+    height: 100vh;
+    background-color: black;
+    .margin {
+        margin-left: 12%;
+        color: white;
+        
+        animation: backInDown;
+        animation-duration: 1.5s;
+    }
+    .title {
+        margin-top: 7%;
+        font-size: 5vw;
+        margin-bottom: 0;
+    }
+    .subTitle {
+        font-size: 2vw;
+        margin-top: 5px;
+    }
+    .colorSpan {
+        margin-left: 15px;
+        color: #f54d4d;
+        font-size: 1.6vw;
+        text-decoration: none;
+        transition: 0.4s ease-in-out;
+        &:hover {
+            margin-left: 40px;
+        }
+    }
+}
+
+.beginGroup {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    margin-left: 12%;
+    margin-top: 15%;
+    .begin {
+        font-size: 1.2em;
+    }
+    .fa-chevron-down {
+        font-size: 1.2em;
+        margin-left: 15px;
+    }
+}
+
+// .bounce {
+//     animation: bounce;
+//     animation-duration: 2s;
+//     animation-timing-function: ease;
+//     animation-iteration-count: infinite;
+// }
+
+// @keyframes bounce {
+//     0%   { transform: translateY(0); }
+//     30%  { transform: translateY(-70px); }
+//     50%  { transform: translateY(0); }
+//     100% { transform: translateY(0); }
+// }
+
+
+.containerGlobal {
+    margin: 10% 0 5% 12%;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    img {
+        width: 5%;
+        height: 1%;
+        margin-right: 30px;
+
+        animation-name: rotate;
+        animation-duration: 4000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+}
+
+@keyframes rotate{
+    0% { transform: rotateY(0deg); }
+    100% { transform: rotateY(360deg); }
+}
+
+.info {
+    // background-color: #303030;
+    // border-radius: 4px;
+    // padding: 10px 20px;
+    // width: 300px;
+    color: black;
+    margin-bottom: 5%;
+    .cardTitle {
+        margin-bottom: 0;
+        font-size: 5vw;
+    }
+    .cardDes {
+        margin-top: 5px;
+        font-size: 2vw;
+        width: 400px;
+    }
+    .cardLink {
+        font-size: 1.2vw;
+        text-decoration: none;
+        color: #f54d4d;
+        transition: 0.4s ease-in-out;
+        &:hover {
+            margin-left: 20px;
+        }
+    }
+}
+
+
+.cardLink:after {
+    content: "";
+    display: block;
+    margin-top: 2px;
+    margin-left: 20px;
+    height: 2px;
+    width: 0px;
+    background: transparent;
+    transition: width 0.5s ease, background-color 0.5s ease;
+  }
+  .cardLink:hover:after {
+    width: 20%;
+    background: #f54d4d;
+  }

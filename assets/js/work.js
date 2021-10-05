@@ -1,10 +1,12 @@
 
-
 let navTag = document.getElementById('navTarget');
 let navTag2 = document.getElementById('navTarget2');
 let navButtonOpen = document.getElementById('navButtonOpen');
 let navButtonClose = document.getElementById('navButtonClose');
 let header = document.getElementById('headerTagert');
+
+let containerTag = document.getElementById('containerTarget');
+let idNumber = 1;
 
 navButtonOpen.addEventListener('click', () => {
     header.setAttribute('style', 'z-index: 1');
@@ -30,3 +32,18 @@ navButtonClose.addEventListener('click', () => {
     header.style.zIndex = -1;
     navButtonOpen.setAttribute('style', 'z-index: 1');
 })
+
+
+$(document).ready(function(){
+    $("a").on('click', function(event) {
+      if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+          window.location.hash = hash;
+        });
+      }
+    });
+});

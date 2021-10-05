@@ -47,7 +47,7 @@ main {
 .fa-chevron-down {
   color: white;
   font-size: 1.3vw;
-  margin-top: 15%;
+  margin-top: 10%;
   margin-left: 50%;
 }
 
@@ -82,7 +82,7 @@ main {
   color: white;
   margin-top: 200px;
   width: 30vw;
-  height: 65vw;
+  height: 700px;
   margin-left: auto;
   margin-right: auto;
   .contTitle {
@@ -104,6 +104,7 @@ main {
     text-decoration: none;
     color: #f54d4d;
     border-radius: 4px;
+    padding-bottom: 35px;
     transition: 0.4s ease-in-out;
     &:hover {
       font-size: 1.3vw;
