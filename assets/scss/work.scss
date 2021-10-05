@@ -94,10 +94,6 @@ body {
 }
 
 .info {
-    // background-color: #303030;
-    // border-radius: 4px;
-    // padding: 10px 20px;
-    // width: 300px;
     color: black;
     margin-bottom: 5%;
     .cardTitle {
@@ -109,29 +105,31 @@ body {
         font-size: 2vw;
         width: 400px;
     }
+    .linkGroup {
+        display: flex;
+    }
     .cardLink {
         font-size: 1.2vw;
         text-decoration: none;
         color: #f54d4d;
         transition: 0.4s ease-in-out;
-        &:hover {
-            margin-left: 20px;
-        }
     }
 }
 
+.marginLink {
+    margin-left: 55px;
+}
 
 .cardLink:after {
     content: "";
     display: block;
     margin-top: 2px;
-    margin-left: 20px;
     height: 2px;
     width: 0px;
     background: transparent;
     transition: width 0.5s ease, background-color 0.5s ease;
-  }
-  .cardLink:hover:after {
-    width: 20%;
+}
+.cardLink:hover:after {
+    width: 100%;
     background: #f54d4d;
-  }
+}

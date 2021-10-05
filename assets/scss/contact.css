@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  background-color: black;
+}
+
+.boxAnim {
+  margin: 15% auto 0 auto;
+  width: 150px;
+  padding: 1px 25px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.boxAnim .anim1:after {
+  content: "";
+  display: block;
+  background-color: #f54d4d;
+  padding: 1px 25px;
+  margin-left: -25px;
+  margin-top: -2px;
+  height: 1px;
+  width: 100%;
+  -webkit-animation: boxAnim 3s linear infinite;
+          animation: boxAnim 3s linear infinite;
+}
+
+@-webkit-keyframes boxAnim {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+  }
+  50% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+  }
+  50.1% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: right;
+            transform-origin: right;
+  }
+  100% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: right;
+            transform-origin: right;
+  }
+}
+
+@keyframes boxAnim {
+  0% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+  }
+  50% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+  }
+  50.1% {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: right;
+            transform-origin: right;
+  }
+  100% {
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transform-origin: right;
+            transform-origin: right;
+  }
+}
+
+.span2 {
+  position: absolute;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  margin-top: 33px;
+  margin-left: 160px;
+}
+
+.span3 {
+  position: absolute;
+  margin-top: 70px;
+  width: 150px;
+}
+
+.span4 {
+  position: absolute;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  margin-top: 34px;
+  margin-left: -40px;
+}
+/*# sourceMappingURL=contact.css.map */
