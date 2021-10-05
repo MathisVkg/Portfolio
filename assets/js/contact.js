@@ -30,3 +30,19 @@ navButtonClose.addEventListener('click', () => {
     header.style.zIndex = -1;
     navButtonOpen.setAttribute('style', 'z-index: 1');
 })
+
+
+let button = document.getElementById('button');
+let boxButton = document.getElementById('boxButton');
+let boxLink = document.getElementById('linkTarget');
+
+button.addEventListener('click', () => {
+    boxButton.style.animationPlayState = 'running';
+    setTimeout(() => {
+        boxButton.style.display = 'none';
+        boxLink.classList.remove('off');
+        boxLink.classList.add('on');
+        boxLink.style.animationPlayState = 'running';
+    }, 3005)
+})
+
