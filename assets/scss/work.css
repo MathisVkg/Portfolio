@@ -268,4 +268,16 @@ body {
     transform: scale(1);
   }
 }
+
+.backToTop {
+  position: fixed;
+  top: 92%;
+  left: 95%;
+  background-color: black;
+  color: white;
+  padding: 9.5px;
+  border-radius: 50px;
+  text-decoration: none;
+  transform: rotate(180deg);
+}
 /*# sourceMappingURL=work.css.map */

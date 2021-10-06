@@ -3,7 +3,7 @@ body {
   font-family: "Lato", sans-serif;
   background-color: black;
   animation: fadeIn;
-  animation-duration: 2s;
+  animation-duration: 2.5s;
   animation-iteration-count: 1;
 }
 
