@@ -54,19 +54,6 @@ body {
     }
 }
 
-// .bounce {
-//     animation: bounce;
-//     animation-duration: 2s;
-//     animation-timing-function: ease;
-//     animation-iteration-count: infinite;
-// }
-
-// @keyframes bounce {
-//     0%   { transform: translateY(0); }
-//     30%  { transform: translateY(-70px); }
-//     50%  { transform: translateY(0); }
-//     100% { transform: translateY(0); }
-// }
 
 
 .containerGlobal {
@@ -132,4 +119,106 @@ body {
 .cardLink:hover:after {
     width: 100%;
     background: #f54d4d;
+}
+
+
+
+
+
+.boxAnim {
+    margin: 15% auto 0 auto;
+    width: 200px;
+    padding: 1px 25px;
+    background-color: #303030;
+    cursor: pointer;
+
+    animation: animOut;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-play-state: paused;
+    .content {
+        text-align: center;
+        color: white;
+    }
+    .anim1:after {
+        content: "";
+        display: block;
+        background-color: #f54d4d;
+        padding: 1px 25px;
+        margin-left: -25px;
+        margin-top: -2px;
+        height: 1px;
+        width: 100%;
+
+        animation: boxAnim1 3s linear infinite;
+    }
+    .anim2:after {
+        content: "";
+        display: block;
+        background-color: #f54d4d;
+        padding: 1px 25px;
+        margin-left: -25px;
+        margin-top: -2px;
+        height: 1px;
+        width: 100%;
+
+        animation: boxAnim2 3s linear infinite;
+    }
+}
+
+@keyframes boxAnim1 {
+    0% { transform: scaleX(0); transform-origin: left; }
+    50% { transform: scaleX(1); transform-origin: left; }
+    50.1% { transform: scaleX(1); transform-origin: right; }
+    100% { transform: scaleX(0); transform-origin: right; }
+}
+
+@keyframes boxAnim2 {
+    0% { transform: scaleX(0); transform-origin: right; }
+    50% { transform: scaleX(1); transform-origin: right; }
+    50.1% { transform: scaleX(1); transform-origin: left; }
+    100% { transform: scaleX(0); transform-origin: left; }
+}
+
+.span2 {
+    position: absolute;
+    transform: rotate(90deg);
+    margin-top: 33px;
+    margin-left: 210px;
+}
+.span3 {
+    position: absolute;
+    margin-top: 70px;
+    width: 200px;
+}
+.span4 {
+    position: absolute;
+    transform: rotate(90deg);
+    margin-top: 34px;
+    margin-left: -40px;
+}
+
+
+@keyframes animOut {
+    0% { transform: scale(1); }
+    20% { transform: scale(0.7); }
+    50% { transform: translateY(0); }
+    70% { transform: translateY(20px); }
+    100% { transform: translateY(-500%); }
+}
+
+.off {
+    display: none;
+}
+
+.on {
+    animation: fadeIn;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-play-state: paused;
+}
+
+@keyframes fadeIn {
+    0% { transform: scale(0.2); }
+    100% { transform: scale(1); }
 }

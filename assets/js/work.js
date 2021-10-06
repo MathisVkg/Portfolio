@@ -4,6 +4,9 @@ let navTag2 = document.getElementById('navTarget2');
 let navButtonOpen = document.getElementById('navButtonOpen');
 let navButtonClose = document.getElementById('navButtonClose');
 let header = document.getElementById('headerTagert');
+let button = document.getElementById('button');
+let boxButton = document.getElementById('boxButton');
+let workTag = document.getElementById('workTarget');
 
 
 navButtonOpen.addEventListener('click', () => {
@@ -45,3 +48,15 @@ $(document).ready(function(){
       }
     });
 });
+
+
+
+button.addEventListener('click', () => {
+    boxButton.style.animationPlayState = 'running';
+    setTimeout(() => {
+        boxButton.style.display = 'none';
+        workTag.classList.remove('off');
+        workTag.classList.add('on');
+        workTag.style.animationPlayState = 'running';
+    }, 3005)
+})

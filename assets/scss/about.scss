@@ -17,10 +17,12 @@ main {
   z-index: 1;
 }
 
-
+.group {
+  height: 100vh;
+  margin-top: 215px;
+}
 
 .title {
-  margin-top: 215px;
   margin-left: 190px;
   font-size: 5vw;
   font-weight: 900;
@@ -47,7 +49,7 @@ main {
 .fa-chevron-down {
   color: white;
   font-size: 1.3vw;
-  margin-top: 10%;
+  margin-top: 12%;
   margin-left: 50%;
 }
 

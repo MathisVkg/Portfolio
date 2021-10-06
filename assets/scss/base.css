@@ -3,7 +3,6 @@
   font-size: 1.2em;
   position: fixed;
   top: 0;
-  -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
   z-index: 1;
   padding: 10px;
@@ -14,8 +13,7 @@
   color: #303030;
   background-color: white;
   border-radius: 50px;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 .fa-times {
@@ -24,7 +22,6 @@
   margin: 20px 0 0 90%;
   font-size: 1.2em;
   color: white;
-  -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
   padding: 10px;
   width: 14px;
@@ -34,23 +31,17 @@
   color: #303030;
   background-color: white;
   border-radius: 50px;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
 }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   position: fixed;
   top: 0;
   height: 100vh;
   width: 100%;
   z-index: -1;
-  -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
 
@@ -68,29 +59,17 @@ header .navText {
 }
 
 .black {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   width: 50%;
   background-color: #303030;
-  -webkit-transition: 0.7s ease-in-out;
   transition: 0.7s ease-in-out;
 }
 
 .black .iconLink {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .black .navText {
@@ -103,30 +82,20 @@ header .navText {
   text-decoration: none;
   color: white;
   margin-left: 10px;
-  -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
 
 .black .iconText:hover {
-  -webkit-transform: translateX(8px);
-          transform: translateX(8px);
+  transform: translateX(8px);
   color: #f54d4d;
 }
 
 .red {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   width: 50%;
   background-color: #f54d4d;
-  -webkit-transition: 0.7s ease-in-out;
   transition: 0.7s ease-in-out;
 }
 
@@ -145,33 +114,27 @@ header .navText {
   margin-left: 130px;
   margin-top: 5px;
   font-size: 50px;
-  -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
 }
 
 .red .navText:hover {
-  -webkit-transform: translateX(8px);
-          transform: translateX(8px);
+  transform: translateX(8px);
   color: #303030;
 }
 
 .navOn {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
 }
 
 .navOff {
-  -webkit-transform: translateY(-150%);
-          transform: translateY(-150%);
+  transform: translateY(-150%);
 }
 
 .navOn2 {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
 }
 
 .navOff2 {
-  -webkit-transform: translateY(150%);
-          transform: translateY(150%);
+  transform: translateY(150%);
 }
 /*# sourceMappingURL=base.css.map */

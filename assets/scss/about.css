@@ -17,18 +17,20 @@ main {
   z-index: 1;
 }
 
-.title {
+.group {
+  height: 100vh;
   margin-top: 215px;
+}
+
+.title {
   margin-left: 190px;
   font-size: 5vw;
   font-weight: 900;
   width: 65vw;
   color: white;
   margin-bottom: 0;
-  -webkit-animation: fadeInLeft;
-          animation: fadeInLeft;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
+  animation: fadeInLeft;
+  animation-duration: 1.5s;
 }
 
 .subTitle {
@@ -38,54 +40,35 @@ main {
   color: white;
   margin-top: 5px;
   font-style: italic;
-  -webkit-animation: fadeInLeft;
-          animation: fadeInLeft;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
+  animation: fadeInLeft;
+  animation-duration: 1.5s;
 }
 
 .fa-chevron-down {
   color: white;
   font-size: 1.3vw;
-  margin-top: 10%;
+  margin-top: 12%;
   margin-left: 50%;
 }
 
 #arrow1 {
-  -webkit-animation: fadeIn 3s infinite;
-          animation: fadeIn 3s infinite;
+  animation: fadeIn 3s infinite;
   opacity: 0.5;
-  -webkit-transition: opacity 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out;
 }
 
 #arrow2 {
-  -webkit-animation: fadeIn 3s infinite;
-          animation: fadeIn 3s infinite;
-  -webkit-animation-delay: 0.3s;
-          animation-delay: 0.3s;
+  animation: fadeIn 3s infinite;
+  animation-delay: 0.3s;
   opacity: 0.5;
-  -webkit-transition: opacity 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out;
 }
 
 #arrow3 {
-  -webkit-animation: fadeIn 3s infinite;
-          animation: fadeIn 3s infinite;
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
+  animation: fadeIn 3s infinite;
+  animation-delay: 0.6s;
   opacity: 0.5;
-  -webkit-transition: opacity 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out;
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 @keyframes fadeIn {
@@ -129,7 +112,6 @@ main {
   color: #f54d4d;
   border-radius: 4px;
   padding-bottom: 35px;
-  -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
 }
 
@@ -144,7 +126,6 @@ main {
   height: 2px;
   width: 0px;
   background: transparent;
-  -webkit-transition: width 0.5s ease, background-color 0.5s ease;
   transition: width 0.5s ease, background-color 0.5s ease;
 }
 

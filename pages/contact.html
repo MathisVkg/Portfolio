@@ -5,7 +5,6 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="../assets/scss/contact.css">
-<link rel="stylesheet" href="../assets/scss/base.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400&display=swap" rel="stylesheet">
@@ -14,41 +13,8 @@
 <title>MathisVkg/Contact</title>
 </head>
 <body>
-    <i class="fas fa-bars" id="navButtonOpen"></i>
-    <header id="headerTagert">
-        <div class="red navOff" id="navTarget">
-            <p class="me">MathisVkg.</p>
-            <a href="../index.html" class="navText">Home</a>
-            <a href="about.html" class="navText">About</a>
-            <a href="work.html" class="navText">Work</a>
-        </div>
-        <div class="black navOff2" id="navTarget2">
-            <i class="fas fa-times" id="navButtonClose"></i>
-            <div class="iconLink">
-                <a href="https://github.com/MathisVkg" target="_blank" class="navText"><i class="fab fa-github"></i></a>
-                <a href="https://github.com/MathisVkg" target="_blank" class="iconText">Github</a>
-            </div>
-            <div class="iconLink">
-                <a href="https://www.linkedin.com/in/mathis-vkg/" target="_blank" class="navText"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.linkedin.com/in/mathis-vkg/" target="_blank" class="iconText">Linkedin</a>
-            </div>
-            <div class="iconLink">
-                <a href="mailto:mvk181@gmail.com" class="navText"><i class="fas fa-envelope"></i></a>
-                <a href="mailto:mvk181@gmail.com" class="iconText">mvk181@gmail.com</a>
-            </div>
-        </div>
-    </header>
     <main>
-        <div class="boxAnim" id="boxButton">
-            <span class="anim1 span1"></span>
-            <span class="anim1 span2"></span>
-            <span class="anim2 span3"></span>
-            <span class="anim2 span4"></span>
-            <div class="content" id="button">
-                <h2 class="title">Do some magic</h2>
-            </div>
-        </div>
-        <div class="off" id="linkTarget">
+        <div class="linkGlobal">
             <div class="linkGroup">
                 <a href="#" class="linkIcon"><i class="fab fa-github"></i></a>
                 <a href="#" class="link">Github</a>
@@ -63,11 +29,24 @@
             </div>
         </div>
         <div class="container">
-            
+            <p class="title">
+                I am currently in training at BeCode to become a junior web developer, <br>
+                And I am looking for an internship in the coming months, do you want to hire me? Contact me.
+            </p>
+        </div>
+        <div class="backGlobal">
+            <a href="about.html" class="backGroup">
+                <i class="fas fa-chevron-down arrow1"></i>
+                <p>about</p>
+            </a>
+            <a href="../index.html">home</a>
+            <a href="work.html" class="backGroup">
+                <p>work</p>
+                <i class="fas fa-chevron-down arrow2"></i>
+            </a>
         </div>
     </main>
 
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
     <script src="https://kit.fontawesome.com/9c212cc3e9.js" crossorigin="anonymous"></script>
     <script src="../assets/js/contact.js"></script>
 </body>
