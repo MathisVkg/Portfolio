@@ -134,9 +134,19 @@ main {
   background: #f54d4d;
 }
 
-@media only screen and (max-width: 400px) {
-  .fa-bars {
-    margin-left: 75%;
+@media only screen and (max-width: 500px) {
+  .title {
+    margin-left: 35px;
+    font-size: 9vw;
+    width: 75vw;
+  }
+  .subTitle {
+    margin-left: 35px;
+    font-size: 3vw;
+  }
+  .fa-chevron-down {
+    font-size: 3.5vw;
+    margin-top: 35%;
   }
 }
 /*# sourceMappingURL=about.css.map */

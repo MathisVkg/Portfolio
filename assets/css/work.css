@@ -245,7 +245,7 @@ body {
     transform: translateY(20px);
   }
   100% {
-    transform: translateY(-500%);
+    transform: translateY(-600%);
   }
 }
 
@@ -279,5 +279,51 @@ body {
   border-radius: 50px;
   text-decoration: none;
   transform: rotate(180deg);
+}
+
+@media only screen and (max-width: 500px) {
+  .boxAnim {
+    margin-top: 80%;
+  }
+  .intro .title {
+    margin-top: 15%;
+    font-size: 15vw;
+  }
+  .intro .subTitle {
+    font-size: 6vw;
+    width: 300px;
+  }
+  .intro .colorSpan {
+    font-size: 4.5vw;
+  }
+  .beginGroup {
+    margin-top: 45%;
+  }
+  .card img {
+    width: 10%;
+  }
+  .info .cardTitle {
+    font-size: 10vw;
+  }
+  .info .cardDes {
+    font-size: 5vw;
+    width: 245px;
+  }
+  .info .cardLink {
+    font-size: 3.5vw;
+  }
+  .backToTop {
+    left: 87%;
+    padding: 1px 4px;
+  }
+  .backToTop .fa-chevron-down {
+    font-size: 0.7em;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .beginGroup {
+    margin-top: 120%;
+  }
 }
 /*# sourceMappingURL=work.css.map */

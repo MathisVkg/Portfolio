@@ -94,7 +94,7 @@ nav .textNav .textOff {
   display: block;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   nav {
     margin-top: 40%;
   }

@@ -79,3 +79,31 @@ body {
         transform: rotate(-90deg);
     }
 }
+
+
+@media only screen and (max-width: 500px) { 
+    .linkGroup a {
+        font-size: 6vw;
+    }
+    .container {
+        margin-top: 50%;
+        .title {
+            width: 300px;
+            font-size: 4vw;
+            margin: 0 auto 0 auto;
+        }
+    }
+    .backGlobal {
+        margin-top: 45%;
+        a {
+            margin: 0 35px;
+            font-size: 2.8vw;
+        }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .backGlobal {
+        margin-top: 100%;
+    }
+}

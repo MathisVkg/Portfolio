@@ -1,5 +1,6 @@
 .fa-bars {
-  margin: 15px 0 0 95%;
+  margin-top: 15px;
+  margin-left: 95%;
   font-size: 1.2em;
   position: fixed;
   top: 0;
@@ -19,7 +20,8 @@
 .fa-times {
   position: absolute;
   top: 0;
-  margin: 20px 0 0 90%;
+  margin-top: 20px;
+  margin-left: 95%;
   font-size: 1.2em;
   color: white;
   transition: 0.4s ease-in-out;
@@ -136,5 +138,47 @@ header .navText {
 
 .navOff2 {
   transform: translateY(150%);
+}
+
+@media only screen and (max-width: 500px) {
+  .fa-bars {
+    margin-left: 85%;
+  }
+  .red .navText {
+    margin-left: 30px;
+    margin-top: 5px;
+    font-size: 30px;
+  }
+  .black .fa-times {
+    margin-left: 50%;
+  }
+  .black .navText {
+    margin-left: unset;
+    font-size: 15px;
+  }
+  .black .iconLink {
+    transform: rotate(90deg);
+    margin: 45px;
+  }
+  .container {
+    margin-top: unset;
+    width: 55vw;
+    height: 1200px;
+  }
+  .container .contTitle {
+    font-size: 10vw;
+    margin-bottom: 0;
+  }
+  .container .contText2 {
+    line-height: 5.5vw;
+    font-size: 4.2vw;
+  }
+  .container .contText {
+    line-height: 6vw;
+    font-size: 3.8vw;
+  }
+  .container .pdf {
+    font-size: 3.8vw;
+  }
 }
 /*# sourceMappingURL=base.css.map */
