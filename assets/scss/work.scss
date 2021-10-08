@@ -262,6 +262,7 @@ body {
     }
     .card img {
         width: 10%;
+        animation-name: unset;
     }
     .info {
         .cardTitle {
@@ -290,6 +291,6 @@ body {
         margin-top: 120%;
     }
     .card img {
-        animation-play-state: paused;
+        animation-name: unset;
     }
 }

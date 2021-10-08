@@ -301,6 +301,7 @@ body {
   }
   .card img {
     width: 10%;
+    animation-name: unset;
   }
   .info .cardTitle {
     font-size: 10vw;
@@ -326,7 +327,7 @@ body {
     margin-top: 120%;
   }
   .card img {
-    animation-play-state: paused;
+    animation-name: unset;
   }
 }
 /*# sourceMappingURL=work.css.map */
