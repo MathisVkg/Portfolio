@@ -17,7 +17,7 @@ nav {
     .textNav {
         margin: 0;
         text-decoration: none;
-        font-size: 5vw;
+        font-size: 6vw;
         font-weight: 700;
         width: 100px;
         transition: 0.4s ease-in-out;
@@ -83,5 +83,16 @@ nav {
     }
     .textOff {
         display: block;
+    }
+}
+
+
+
+@media only screen and (max-width: 400px) {
+    nav {
+        margin-top: 40%;
+        .textNav {
+            font-size: 15vw;
+        }
     }
 }
