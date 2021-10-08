@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  background-color: black;
+}
+
+.bodyClose {
+  height: 100%;
+  overflow: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  z-index: 1;
+}
+
+.group {
+  height: 100vh;
+  margin-top: 215px;
+}
+
+.title {
+  margin-left: 190px;
+  font-size: 5vw;
+  font-weight: 900;
+  width: 65vw;
+  color: white;
+  margin-bottom: 0;
+  animation: fadeInLeft;
+  animation-duration: 1.5s;
+}
+
+.subTitle {
+  margin-left: 190px;
+  font-size: 1vw;
+  font-weight: 700;
+  color: white;
+  margin-top: 5px;
+  font-style: italic;
+  animation: fadeInLeft;
+  animation-duration: 1.5s;
+}
+
+.fa-chevron-down {
+  color: white;
+  font-size: 1.3vw;
+  margin-top: 12%;
+  margin-left: 50%;
+}
+
+#arrow1 {
+  animation: fadeIn 3s infinite;
+  opacity: 0.5;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#arrow2 {
+  animation: fadeIn 3s infinite;
+  animation-delay: 0.3s;
+  opacity: 0.5;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#arrow3 {
+  animation: fadeIn 3s infinite;
+  animation-delay: 0.6s;
+  opacity: 0.5;
+  transition: opacity 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.container {
+  color: white;
+  margin-top: 200px;
+  width: 30vw;
+  height: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container .contTitle {
+  font-size: 2.8vw;
+  color: #f54d4d;
+}
+
+.container .contText2 {
+  line-height: 2.7vw;
+  font-size: 1.3vw;
+  margin-bottom: 45px;
+}
+
+.container .contText {
+  line-height: 2.5vw;
+  font-size: 1.1vw;
+  margin-bottom: 7%;
+}
+
+.container .pdf {
+  font-size: 1.1vw;
+  text-decoration: none;
+  color: #f54d4d;
+  border-radius: 4px;
+  padding-bottom: 35px;
+  transition: 0.4s ease-in-out;
+}
+
+.container .pdf:hover {
+  font-size: 1.3vw;
+}
+
+.container .pdf:after {
+  content: "";
+  display: block;
+  margin-top: 2px;
+  height: 2px;
+  width: 0px;
+  background: transparent;
+  transition: width 0.5s ease, background-color 0.5s ease;
+}
+
+.container .pdf:hover:after {
+  width: 21%;
+  background: #f54d4d;
+}
+
+@media only screen and (max-width: 500px) {
+  .title {
+    margin-left: 35px;
+    font-size: 9vw;
+    width: 75vw;
+  }
+  .subTitle {
+    margin-left: 35px;
+    font-size: 3vw;
+  }
+  .fa-chevron-down {
+    font-size: 3.5vw;
+    margin-top: 35%;
+  }
+}
+/*# sourceMappingURL=about.css.map */
