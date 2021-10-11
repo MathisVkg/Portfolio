@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  background-image: url("/assets/img/me2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+  margin-left: 20%;
+  animation: fadeInLeft;
+  animation-duration: 1.5s;
+}
+
+nav .textNav {
+  margin: 0;
+  text-decoration: none;
+  font-size: 6vw;
+  font-weight: 700;
+  width: 100px;
+  transition: 0.4s ease-in-out;
+}
+
+nav .textNav:hover {
+  animation: bounce;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+nav .textNav .textOff {
+  transition: 0.4s ease-in-out;
+  display: none;
+}
+
+.bounce {
+  animation-name: bounce;
+  animation-timing-function: ease;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    transform: scale(1.1, 0.7) translateY(0);
+  }
+  30% {
+    transform: scale(0.7, 1.1) translateY(-100px);
+  }
+  50% {
+    transform: scale(1.05, 0.95) translateY(0);
+  }
+  57% {
+    transform: scale(1, 1) translateY(-7px);
+  }
+  64% {
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+}
+
+.red {
+  color: #f54d4d;
+}
+
+.white {
+  color: white;
+}
+
+.hover1:hover .textOn {
+  display: none;
+}
+
+.hover1:hover .textOff {
+  display: block;
+}
+
+.hover2:hover .textOn {
+  display: none;
+}
+
+.hover2:hover .textOff {
+  display: block;
+}
+
+.hover3:hover .textOn {
+  display: none;
+}
+
+.hover3:hover .textOff {
+  display: block;
+}
+
+@media only screen and (max-width: 500px) {
+  nav {
+    margin-top: 40%;
+  }
+  nav .textNav {
+    font-size: 15vw;
+  }
+}
+/*# sourceMappingURL=index.css.map */
