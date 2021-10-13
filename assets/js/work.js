@@ -51,12 +51,12 @@ $(document).ready(function(){
 
 
 
-button.addEventListener('click', () => {
-    boxButton.style.animationPlayState = 'running';
-    setTimeout(() => {
-        boxButton.style.display = 'none';
-        workTag.classList.remove('off');
-        workTag.classList.add('on');
-        workTag.style.animationPlayState = 'running';
-    }, 3005)
-})
+// button.addEventListener('click', () => {
+//     boxButton.style.animationPlayState = 'running';
+//     setTimeout(() => {
+//         boxButton.style.display = 'none';
+//         workTag.classList.remove('off');
+//         workTag.classList.add('on');
+//         workTag.style.animationPlayState = 'running';
+//     }, 3005)
+// })

@@ -4,20 +4,9 @@ let navTag2 = document.getElementById('navTarget2');
 let navButtonOpen = document.getElementById('navButtonOpen');
 let navButtonClose = document.getElementById('navButtonClose');
 let header = document.getElementById('headerTagert');
-let arrow = document.getElementById('arrow1');
-let arrow2 = document.getElementById('arrow2');
-let arrow3 = document.getElementById('arrow3');
 let body = document.body;
 
-arrow.addEventListener('click', () => {
-    body.classList.remove('bodyClose');
-})
-arrow2.addEventListener('click', () => {
-    body.classList.remove('bodyClose');
-})
-arrow3.addEventListener('click', () => {
-    body.classList.remove('bodyClose');
-})
+
 
 navButtonOpen.addEventListener('click', () => {
     header.setAttribute('style', 'z-index: 1');

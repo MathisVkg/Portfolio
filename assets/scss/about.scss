@@ -1,12 +1,7 @@
 body {
   margin: 0;
   font-family: "Lato", sans-serif;
-  background-color: black;
-}
-
-.bodyClose {
-  height: 100%;
-  overflow: hidden;
+  background-color: #1f1e1e;
 }
 
 html {
@@ -23,7 +18,7 @@ main {
 }
 
 .title {
-  margin-left: 190px;
+  margin-left: 15%;
   font-size: 5vw;
   font-weight: 900;
   width: 65vw;
@@ -35,7 +30,7 @@ main {
 }
 
 .subTitle {
-  margin-left: 190px;
+  margin-left: 15%;
   font-size: 1vw;
   font-weight: 700;
   color: white;
@@ -46,12 +41,20 @@ main {
   animation-duration: 1.5s;
 }
 
-.fa-chevron-down {
+.arrowGroup{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
   color: white;
-  font-size: 1.3vw;
-  margin-top: 12%;
-  margin-left: 50%;
+  font-size: 1.3em;
+  margin-top: 300px;
+  .fa-chevron-down {
+    padding-top: 15px;
+  }
 }
+
+
 
 #arrow1 {
   animation: fadeIn 3s infinite;
@@ -83,33 +86,33 @@ main {
 .container {
   color: white;
   margin-top: 200px;
-  width: 30vw;
+  width: 40vw;
   height: 700px;
   margin-left: auto;
   margin-right: auto;
   .contTitle {
-    font-size: 2.8vw;
+    font-size: 2.8em;
     color: #f54d4d;
   }
   .contText2 {
-    line-height: 2.7vw;
-    font-size: 1.3vw;
+    line-height: 2em;
+    font-size: 1.3em;
     margin-bottom: 45px;
   }
   .contText {
-    line-height: 2.5vw;
-    font-size: 1.1vw;
+    line-height: 2.5em;
+    font-size: 1.1em;
     margin-bottom: 7%;
   }
   .pdf {
-    font-size: 1.1vw;
+    font-size: 1.1em;
     text-decoration: none;
     color: #f54d4d;
     border-radius: 4px;
     padding-bottom: 35px;
     transition: 0.4s ease-in-out;
     &:hover {
-      font-size: 1.3vw;
+      font-size: 1.3em;
     }
   }
   .pdf:after {
@@ -139,8 +142,10 @@ main {
     margin-left: 35px;
     font-size: 3vw;
   }
-  .fa-chevron-down {
-    font-size: 3.5vw;
-    margin-top: 35%;
+  .arrowGroup {
+    margin-top: 320px;
+    .fa-chevron-down {
+      font-size: 3.5vw;
+    }
   }
 }

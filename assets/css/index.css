@@ -1,7 +1,26 @@
 body {
   margin: 0;
   font-family: 'Lato', sans-serif;
-  background-color: #303030;
+  background-color: #1f1e1e;
+}
+
+.backGround {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 45%;
+  background-image: url("../img/me2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.red {
+  color: #f54d4d;
+}
+
+.white {
+  color: white;
 }
 
 nav {
@@ -16,7 +35,7 @@ nav {
 nav .textNav {
   margin: 0;
   text-decoration: none;
-  font-size: 6vw;
+  font-size: 7em;
   font-weight: 700;
   width: 100px;
   transition: 0.4s ease-in-out;
@@ -31,6 +50,14 @@ nav .textNav:hover {
 nav .textNav .textOff {
   transition: 0.4s ease-in-out;
   display: none;
+}
+
+.textInfo {
+  position: fixed;
+  color: white;
+  left: 3%;
+  top: 90%;
+  font-size: 17px;
 }
 
 .bounce {
@@ -60,14 +87,6 @@ nav .textNav .textOff {
   100% {
     transform: scale(1, 1) translateY(0);
   }
-}
-
-.red {
-  color: #f54d4d;
-}
-
-.white {
-  color: white;
 }
 
 .hover1:hover .textOn {
@@ -100,6 +119,10 @@ nav .textNav .textOff {
   }
   nav .textNav {
     font-size: 15vw;
+  }
+  .textInfo {
+    left: 5%;
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=index.css.map */

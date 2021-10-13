@@ -6,6 +6,24 @@ body {
     background-color: #1f1e1e;
 }
 
+.backGround {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 45%;
+    background-image: url("../img/me2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.red {
+    color: #f54d4d;
+}
+
+.white {
+    color: white;
+}
 
 nav {
     display: flex;
@@ -18,12 +36,11 @@ nav {
     .textNav {
         margin: 0;
         text-decoration: none;
-        font-size: 6vw;
+        font-size: 7em;
         font-weight: 700;
         width: 100px;
         transition: 0.4s ease-in-out;
         &:hover {
-            // transform: translateX(30px);
             animation: bounce;
             animation-duration: 2s;
             animation-iteration-count: infinite;
@@ -35,6 +52,13 @@ nav {
     }
 }
 
+.textInfo {
+    position: fixed;
+    color: white;
+    left: 3%;
+    top: 90%;
+    font-size: 17px;
+}
 
 .bounce {
     animation-name: bounce;
@@ -53,14 +77,6 @@ nav {
     100% { transform: scale(1,1)      translateY(0); }
 }
 
-
-.red {
-    color: #f54d4d;
-}
-
-.white {
-    color: white;
-}
 
 .hover1:hover {
     .textOn {
@@ -95,5 +111,9 @@ nav {
         .textNav {
             font-size: 15vw;
         }
+    }
+    .textInfo {
+        left: 5%;
+        font-size: 14px;
     }
 }

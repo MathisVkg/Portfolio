@@ -1,10 +1,102 @@
 body {
   margin: 0;
   font-family: "Lato", sans-serif;
-  background-color: black;
+  background-color: #1f1e1e;
   animation: fadeIn;
   animation-duration: 2.5s;
   animation-iteration-count: 1;
+}
+
+.fa-bars {
+  margin-top: 15px;
+  margin-left: 95%;
+  font-size: 1.2em;
+  position: fixed;
+  top: 0;
+  transition: 0.4s ease-in-out;
+  z-index: 1;
+  padding: 10px;
+  color: white;
+}
+
+.fa-bars:hover {
+  color: #303030;
+  background-color: white;
+  border-radius: 50px;
+  transform: rotate(90deg);
+}
+
+.fa-times {
+  position: absolute;
+  top: 0;
+  margin-top: 20px;
+  margin-left: 88%;
+  font-size: 1.2em;
+  color: white;
+  transition: 0.4s ease-in-out;
+  padding: 10px;
+  width: 14px;
+}
+
+.fa-times:hover {
+  color: #303030;
+  background-color: white;
+  border-radius: 50px;
+  transform: rotate(90deg);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: -1;
+  transition: 0.5s ease-in-out;
+}
+
+header .navText {
+  text-decoration: none;
+  color: white;
+}
+
+.red {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #f54d4d;
+  transition: 0.7s ease-in-out;
+}
+
+.red .me {
+  position: absolute;
+  top: 0;
+  color: white;
+  font-size: 25px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.red .navText {
+  font-weight: 900;
+  margin: 0 15px;
+  font-size: 50px;
+  transition: 0.3s ease-in-out;
+}
+
+.red .navText:hover {
+  transform: translateY(-8px);
+  color: #303030;
+}
+
+.navOn {
+  transform: translateY(0);
+}
+
+.navOff {
+  transform: translateY(-150%);
 }
 
 .linkGlobal {
@@ -14,14 +106,13 @@ body {
 
 .linkGroup {
   margin: 12% 30px 0 30px;
-  font-size: 3vw;
   color: white;
 }
 
 .linkGroup a {
   text-decoration: none;
   color: white;
-  font-size: 2vw;
+  font-size: 2em;
   transition: 0.3s ease-in-out;
 }
 
@@ -45,50 +136,30 @@ body {
 }
 
 .container .title {
-  font-size: 1vw;
+  font-size: 1.2em;
 }
 
-.backGlobal {
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 5%;
-}
-
-.backGlobal .backGroup {
-  display: flex;
-  align-items: center;
-}
-
-.backGlobal a {
-  margin: 0 55px;
-  text-decoration: none;
-  color: white;
-  font-size: 0.8vw;
-  transition: 0.3s ease-in-out;
-}
-
-.backGlobal a:hover {
-  color: #f54d4d;
-}
-
-.backGlobal .fa-chevron-down {
-  margin: 4px 15px 0 15px;
-  font-size: 0.8em;
-}
-
-.backGlobal .arrow1 {
-  transform: rotate(90deg);
-}
-
-.backGlobal .arrow2 {
-  transform: rotate(-90deg);
+@media only screen and (max-width: 800px) {
+  .container .title {
+    width: 500px;
+    margin: 0 auto;
+    font-size: 1em;
+  }
+  .linkGlobal {
+    margin-top: 35%;
+  }
+  .fa-bars {
+    margin-left: 90%;
+  }
 }
 
 @media only screen and (max-width: 500px) {
-  .linkGroup a {
-    font-size: 6vw;
+  .linkGlobal {
+    flex-direction: column;
+    align-items: center;
+  }
+  .linkGlobal .linkGroup {
+    margin: 10px 30px;
   }
   .container {
     margin-top: 50%;
@@ -98,18 +169,11 @@ body {
     font-size: 4vw;
     margin: 0 auto 0 auto;
   }
-  .backGlobal {
-    margin-top: 45%;
+  .fa-bars {
+    margin-left: 85%;
   }
-  .backGlobal a {
-    margin: 0 35px;
-    font-size: 2.8vw;
-  }
-}
-
-@media only screen and (max-width: 375px) {
-  .backGlobal {
-    margin-top: 100%;
+  .red {
+    flex-direction: column;
   }
 }
 /*# sourceMappingURL=contact.css.map */
