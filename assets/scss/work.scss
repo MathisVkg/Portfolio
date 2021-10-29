@@ -190,7 +190,7 @@ body {
     }
     .card img {
         width: 10%;
-        animation-name: unset;
+        animation-play-state: pause;
     }
     .info {
         .cardTitle {
@@ -216,7 +216,8 @@ body {
 
 @media only screen and (max-width: 375px) {
     .card img {
-        animation-name: unset;
+        animation-play-state: pause;
+        width: 10%;
     }
 }
 
